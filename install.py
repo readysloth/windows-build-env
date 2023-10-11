@@ -364,8 +364,8 @@ class EWDK(Zip):
     ver = '10'
     zip = 'EWDK11.zip'
     files = [f'x{letter}' for letter in 'abc']
-    base_url = 'https://github.com/readysloth/msvc-wine/releases/download/v0.1.0/'
-    urls = [f'{base_url}{file}' for file in files]
+    urls = [f'https://github.com/readysloth/msvc-wine/releases/download/v0.1.0/{file}'
+            for file in files]
     filename = zip
 
     def download(self):
