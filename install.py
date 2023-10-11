@@ -239,7 +239,7 @@ class Wix(Zip):
 class Dependencies(Zip):
     ver = '1.11.1'
     zip = 'Dependencies_x64_Release.zip'
-    url = f'https://github.com/lucasg/Dependencies/releases/download/{ver}/{zip}'
+    url = f'https://github.com/lucasg/Dependencies/releases/download/v{ver}/{zip}'
     filename = zip
 
     def install(self, file):
